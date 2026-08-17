@@ -1,0 +1,24 @@
+# Build products
+/build/
+/build-*/
+/out/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+CTestTestfile.cmake
+Testing/
+compile_commands.json
+install_manifest.txt
+
+# Downloaded model weights are intentionally never versioned.
+*.onnx
+*.onnx.data
+/models/*
+!/models/README.md
+
+# Demo output and local editor/OS state
+/poses.ndjson
+.DS_Store
+*.swp
+*.swo
+CMakeUserPresets.json

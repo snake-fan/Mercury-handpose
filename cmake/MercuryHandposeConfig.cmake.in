@@ -1,0 +1,16 @@
+# Copyright 2026 Zhang
+# SPDX-License-Identifier: BSL-1.0
+@PACKAGE_INIT@
+
+include(CMakeFindDependencyMacro)
+list(APPEND CMAKE_MODULE_PATH "${CMAKE_CURRENT_LIST_DIR}")
+find_dependency(Threads)
+find_dependency(Eigen3 NO_MODULE)
+if(Eigen3_VERSION VERSION_LESS 3.3)
+	set(MercuryHandpose_FOUND FALSE)
+	set(MercuryHandpose_NOT_FOUND_MESSAGE "Mercury Handpose requires Eigen 3.3 or newer")
+	return()
+endif()
+find_dependency(OpenCV COMPONENTS core imgproc)
+find_dependency(ONNXRuntime)
+include("${CMAKE_CURRENT_LIST_DIR}/MercuryHandposeTargets.cmake")

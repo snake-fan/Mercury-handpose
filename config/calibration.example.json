@@ -1,0 +1,67 @@
+{
+    "metadata": {
+        "version": 2
+    },
+    "cameras": [
+        {
+            "name": "Left fisheye camera",
+            "model": "fisheye_equidistant4",
+            "intrinsics": {
+                "fx": 300.0,
+                "fy": 300.0,
+                "cx": 320.0,
+                "cy": 240.0
+            },
+            "distortion": {
+                "k1": 0.0,
+                "k2": 0.0,
+                "k3": 0.0,
+                "k4": 0.0
+            },
+            "resolution": {
+                "width": 640,
+                "height": 480
+            }
+        },
+        {
+            "name": "Right fisheye camera",
+            "model": "fisheye_equidistant4",
+            "intrinsics": {
+                "fx": 300.0,
+                "fy": 300.0,
+                "cx": 320.0,
+                "cy": 240.0
+            },
+            "distortion": {
+                "k1": 0.0,
+                "k2": 0.0,
+                "k3": 0.0,
+                "k4": 0.0
+            },
+            "resolution": {
+                "width": 640,
+                "height": 480
+            }
+        }
+    ],
+    "opencv_stereo_calibrate": {
+        "rotation": [
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0,
+            0.0,
+            0.0,
+            0.0,
+            1.0
+        ],
+        "translation": [
+            -0.064,
+            0.0,
+            0.0
+        ],
+        "essential": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0],
+        "fundamental": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 0.0]
+    }
+}
